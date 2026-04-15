@@ -1,6 +1,7 @@
 ## Pricing Experiment — First Purchase Discount
 
-Take-home case study analyzing the impact of a first-purchase discount on class pack performance using a Difference-in-Differences (DiD) causal inference approach.
+Case study analyzing a pricing experiment to evaluate the impact of a first-purchase discount using both business analysis and causal inference approaches.
+
 ## 📌 Overview
 
 This project evaluates the causal impact of a 15% discount on first-time class pack purchases in a marketplace setting.
