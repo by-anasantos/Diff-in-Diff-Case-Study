@@ -7,14 +7,15 @@ Take-home case study analyzing the impact of a first-purchase discount on class 
 This project evaluates the causal impact of a 15% discount on first-time class pack purchases in a marketplace setting.
 The analysis compares Test vs Control groups across Pre and Post periods to isolate the incremental effect of the discount on the funnel.
 
-The study follows a structured analytical workflow:
+## 📊 Project Versions
 
-1.Data validation\
-2.Metric construction\
-3.Exploratory analysis\
-4.Baseline comparability checks\
-5.Temporal evolution\
-6.Diff-in-Diff causal estimation
+This project includes two versions:
+
+- **Business Impact Analysis**  
+  Focused on business insights and decision-making  
+
+- **Econometric Evaluation (Diff-in-Diff)**  
+  Focused on causal inference and statistical rigor  
 
 ## 🎯 Business Question
 Did offering a 15% discount to new users increase demand and improve funnel performance compared to a control group without discount?
@@ -35,37 +36,32 @@ Purchases
 Conversion Rate
 
 
-## 📊Types of Analysis Performed
+## 📊 Types of Analysis Performed
 
-Data quality and experiment integrity checks
-Construction of derived metrics (e.g. conversion rate)
-Exploratory Data Analysis (EDA)
-Baseline comparability tests (Pre-period)
-Pre vs Post evolution by group
-Diff-in-Diff causal estimation (by metric)
+### Business Impact Analysis
+- Data quality and experiment integrity checks  
+- Construction of derived metrics (e.g. conversion rate)  
+- Exploratory Data Analysis (EDA)  
+- Pre vs Post comparison by group  
+- High-level Diff-in-Diff (intuitive interpretation)  
+- Segmented analysis by price tier  
 
-📈 Key Performance Indicators (KPIs)
+### Econometric Evaluation (Diff-in-Diff)
+- Data validation and experiment consistency checks  
+- Formal construction of treatment and post indicators  
+- Baseline comparability tests (Pre-period)  
+- Regression-based Diff-in-Diff estimation  
+- Clustered standard errors  
+- Fixed effects models (company and time)  
+- Statistical inference (confidence intervals, p-values)  
+- Power analysis (by metric)  
 
-Pack Views — top-of-funnel demand
-Purchases — completed transactions
-Conversion Rate — efficiency of the funnel
+## 🚀 Next Steps
 
-Segmented analysis by price tier
-
-## 🧠 Methodology
-
-The causal effect is estimated using a Difference-in-Differences approach:
-The analysis is performed:
-.First at the aggregate level
-.Then by price tier to assess heterogeneity
-
-Each metric is analyzed separately (Pack Views, Purchases, Conversion), with explicit construction of:
-.Pre and Post averages
-.Within-group deltas
-.Cross-group DiD effect
+- Improve notebook design and visual presentation (layout, hierarchy, colors)  
+- Code improvements and refactoring for readability and reproducibility  
+- Create an executive presentation summarizing key insights  
+- Add a Q&A section comparing the different methodologies  
 
 
 
-# Note
-This is a V0 implementation with simplified Diff-in-Diff analysis. 
-A V1 version will include robustness checks, statistical inference, and extended validation.
