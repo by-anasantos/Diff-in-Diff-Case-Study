@@ -1,5 +1,4 @@
-
-## Diff-in-Diff Case Study — First Purchase Discount
+## Pricing Experiment — First Purchase Discount
 
 Take-home case study analyzing the impact of a first-purchase discount on class pack performance using a Difference-in-Differences (DiD) causal inference approach.
 ## 📌 Overview
